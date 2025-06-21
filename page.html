@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Help Center - Web Agency</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: #f9fafa;
+      color: #1f2937;
+    }
+    .topbar {
+      background: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .logo {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #2563eb;
+    }
+    .nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #374151;
+      font-weight: 500;
+    }
+    .auth a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: #374151;
+    }
+    .cta {
+      background: #2563eb;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+    .hero {
+      background: #111827;
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.125rem;
+      color: #d1d5db;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 3rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+    }
+    .card:hover {
+      box-shadow: 0 12px 36px rgba(0,0,0,0.08);
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      color: #111827;
+    }
+    .card p {
+      font-size: 1rem;
+      color: #4b5563;
+    }
+    .footer {
+      background: #111827;
+      color: #d1d5db;
+      padding: 3rem 2rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .footer h4 {
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+      color: #f9fafb;
+    }
+    .footer ul {
+      list-style: none;
+    }
+    .footer li {
+      margin-bottom: 0.5rem;
+      font-size: 0.875rem;
+      color: #9ca3af;
+    }
+    .copyright {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.875rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">🌐 WebSpark</div>
+    <nav class="nav">
+      <a href="#">Products</a>
+      <a href="#">Solutions</a>
+      <a href="#">Pricing</a>
+      <a href="#">Docs</a>
+      <a href="#">Resources</a>
+    </nav>
+    <div class="auth">
+      <a href="#">Login</a>
+      <a href="#" class="cta">Get Started</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>How can we help you?</h1>
+    <p>Choose a category below to contact our team directly.</p>
+  </section>
+
+  <section class="cards">
+    <div class="card">
+      <h3>General Support</h3>
+      <p>Search our knowledge base or submit a support ticket.</p>
+    </div>
+    <div class="card">
+      <h3>Suggest an Integration</h3>
+      <p>Propose a new source, tool, or destination for integration.</p>
+    </div>
+    <div class="card">
+      <h3>Contact Sales</h3>
+      <p>Reach out to our sales team for customized solutions.</p>
+    </div>
+    <div class="card">
+      <h3>Technical Support</h3>
+      <p>Need developer help? Get technical guidance from our engineers.</p>
+    </div>
+    <div class="card">
+      <h3>Partner Program</h3>
+      <p>Join as a partner and explore co-marketing opportunities.</p>
+    </div>
+    <div class="card">
+      <h3>Billing & Account</h3>
+      <p>Questions on payments, invoices, or managing your account.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <h4>Products</h4>
+        <ul>
+          <li>Website Builder</li>
+          <li>Analytics</li>
+          <li>CRM</li>
+        </ul>
+      </div>
+      <div>
+        <h4>For Developers</h4>
+        <ul>
+          <li>Docs</li>
+          <li>API</li>
+          <li>Open Source</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li>About</li>
+          <li>Careers</li>
+          <li>Blog</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <li>Help Center</li>
+          <li>Contact</li>
+          <li>Status</li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">© 2025 WebSpark Agency. All rights reserved.</p>
+  </footer>
+</body>
+</html>
